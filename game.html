@@ -13,10 +13,20 @@
 <script src="game.js"></script>
 </head>
 <body>
-    <div class = "container"></div>
-    <div class = "container">
+    <div class = "container" id = "Vis">
+        <h2>Math Away!!</h2>
+        <div class  = "output" class = "col-lg-6">
+            <h2 class = "txt txt-success">Select Your Grade!<b> Select a grade between 1 and 5</b></h2>
+            <input placeholder="Grade" type = "number" id = "Grade"></input>
+            <h2 id = "Error"></h2>
+        </div>
+        <button id = "Sai" onclick="GetGrade()">Submit</button>
+    </div>
+    <div class = "container" style="display:none" id = "Invis">
         <center>
             <h2 style="color: white;">Do The Math!</h2>
+            <h3 id = "p1name"></h3>
+            <h3 id = "p2name"></h3>
             <h3 id = "pq"></h3>
             <h3 id = "pa"></h3>
             <div id  = "output" class = "col-lg-6"></div>
